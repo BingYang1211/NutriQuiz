@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/learning_background"
+    tools:context=".LearnActivity">
+
+    <TextView
+        android:id="@+id/learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/learning"
+        android:textColor="#000000"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffd4"
+        android:onClick="onClickBackBtn"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/back" />
+
+    <ImageButton
+        android:id="@+id/btnProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/proteinDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickProteinBtn"
+        android:src="@drawable/protein"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learning" />
+
+    <ImageButton
+        android:id="@+id/btnVitamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/vitaminDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickVitaminBtn"
+        android:src="@drawable/vitamin"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarbohydrate"
+        app:layout_constraintStart_toEndOf="@+id/btnProtein"
+        app:layout_constraintTop_toBottomOf="@+id/learning" />
+
+    <ImageButton
+        android:id="@+id/btnCarbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/carbohydateDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickCarbohydrateBtn"
+        android:src="@drawable/carbohydrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learning" />
+
+    <ImageButton
+        android:id="@+id/btnFiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/fiberDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickFiberBtn"
+        android:src="@drawable/fiber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMineral" />
+
+    <ImageButton
+        android:id="@+id/btnWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/waterDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickWaterBtn"
+        android:src="@drawable/water"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProtein" />
+
+    <ImageButton
+        android:id="@+id/btnFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/fatDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickFatBtn"
+        android:src="@drawable/fat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCarbohydrate" />
+
+    <ImageButton
+        android:id="@+id/btnMineral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/mineralDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickMineralBtn"
+        android:src="@drawable/mineral"
+        app:layout_constraintEnd_toStartOf="@+id/btnFat"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/btnWater"
+        app:layout_constraintTop_toBottomOf="@+id/btnVitamin" />
+
+    <ImageButton
+        android:id="@+id/btnFoodPyramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/pyramidDesc"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="onClickPyramidBtn"
+        android:src="@drawable/food_pyramid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFiber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

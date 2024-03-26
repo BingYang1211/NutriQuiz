@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nutriQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="@font/balbaleo"
+        android:text="@string/nutriQuiz"
+        android:textColor="#000000"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#F6BE00"
+        android:text="@string/btnLearn"
+        android:fontFamily="@font/comicsans"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:onClick="onClickLearnBtn"
+        app:layout_constraintEnd_toEndOf="@+id/nutriQuiz"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/nutriQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/nutriQuiz" />
+
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="#F6BE00"
+        android:fontFamily="@font/comicsans"
+        android:onClick="onClickQuizBtn"
+        android:text="@string/btnQuiz"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLearn"
+        app:layout_constraintStart_toStartOf="@+id/btnLearn"
+        app:layout_constraintTop_toBottomOf="@+id/btnLearn"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/btnLeaderboard"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F6BE00"
+        android:fontFamily="@font/comicsans"
+        android:onClick="onClickLeaderboardBtn"
+        android:text="@string/btnLeaderboard"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnQuiz"
+        app:layout_constraintStart_toStartOf="@+id/btnQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuiz" />
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffd4"
+        android:contentDescription="@string/btnSettings"
+        android:onClick="onClickSettingsBtn"
+        android:src="@drawable/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#ffffd4"
+        android:contentDescription="@string/exit"
+        android:onClick="onClickExitBtn"
+        android:src="@drawable/quit"
+        app:layout_constraintEnd_toStartOf="@+id/btnSettings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
